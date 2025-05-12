@@ -99,6 +99,34 @@ class SinglyLinkedList {
     return removedNode.data;
   }
 
+  removeByValue(value) {
+    if (!this.head) return null;
+
+    if (this.head.data === value) {
+      const removedNode = this.head;
+      this.head = this.head.next;
+      if (this.size === 1) this.tail = null;
+      this.size--;
+      return removedNode.data;
+    }
+
+    let current = this.head;
+    let prev = null;
+
+    while (current) {
+      if (current.data === value) {
+        prev.next = current.next;
+        if (!current.next) this.tail = prev;
+        this.size--;
+        return current.data;
+      }
+      prev = current;
+      current = current.next;
+    }
+
+    return null;
+  }
+
   toString() {
     let current = this.head;
     let result = "";

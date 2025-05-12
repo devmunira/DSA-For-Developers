@@ -103,6 +103,19 @@ class CustomArray {
       cb(this.array[index], index);
     }
   }
+
+  checkIsUniqueValue() {
+    if (this.length == 0) return false;
+
+    for (let i = 0; i < array.length; i++) {
+      for (let j = i + 1; j < array.length; j++) {
+        if (array[i] === array[j]) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
 }
 
 const array = new CustomArray();

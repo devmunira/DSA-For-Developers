@@ -164,6 +164,7 @@ class HashTable {
     return Array.from(this.#keys);
   }
 
+  //Get values from hash table
   values() {
     const values = [];
     for (const list of this.table) {
@@ -189,12 +190,45 @@ class HashTable {
   }
 }
 
-const hashTable = new HashTable();
-hashTable.set("name", "Munira");
-hashTable.set("age", "10 years");
-hashTable.set("location", "24 killington Cresent");
-hashTable.set("location2", "24 killington Cresent");
-hashTable.set("location3", "24 killington Cresent");
-hashTable.set("location4", "24 killington Cresent");
+class HashSet {
+  constructor() {
+    this.data = new HashTable();
+    this.count = 0;
+  }
 
-console.log(hashTable, hashTable.entries());
+  set(key) {
+    if (this.data.has(key)) return;
+    this.data.set(key, true);
+    this.count++;
+    return;
+  }
+
+  get(key) {
+    return this.data.get(key);
+  }
+
+  size() {
+    return this.count;
+  }
+
+  has(value) {
+    return !!this.data.get(value);
+  }
+
+  values() {
+    return this.data.keys();
+  }
+}
+
+const set = new HashSet();
+set.set("key1");
+set.set("key2");
+set.set("key3");
+set.set("key4");
+set.set("key5");
+set.set("key6");
+set.set("key7");
+set.set("key8");
+set.set("key9");
+
+console.log(set.values(), set.size(), set);
