@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Array",
+    "url": "/array",
+    "children": [
+      {
+        "name": "Image Processing",
+        "url": "#",
+        "description": "Pixels stored in 2D/3D arrays (e.g., RGB values)"
+      },
+      {
+        "name": "Game Boards",
+        "url": "#",
+        "description": "Chess, Sudoku, or level layouts stored as grids"
+      },
+      {
+        "name": "Sensor Data Storage",
+        "url": "#",
+        "description": "Temperature, pressure, or sensor readings stored in arrays"
+      },
+      {
+        "name": "Autocomplete / Spell Check",
+        "url": "#",
+        "description": "Word suggestions stored in arrays"
+      },
+      {
+        "name": "Financial Time Series",
+        "url": "#",
+        "description": "Stock prices, currency rates, or market data stored in arrays"
+      }
+    ]
+  },
+
+  {
+    "name": "Linked List",
+    "url": "#",
+    "children": [
+      {
+        "name": "Undo/Redo",
+        "url": "#",
+        "description": "Easily move forward/backward in steps"
+      },
+      {
+        "name": "Music or video playlist",
+        "url": "#",
+        "description": "Add/remove in real time"
+      },
+      {
+        "name": "Browser History",
+        "url": "#",
+        "description": "Navigating back and forth between visited pages"
+      },
+      {
+        "name": "Job/Task Scheduling",
+        "url": "#",
+        "description": "Queued tasks like print jobs or background jobs"
+      },
+      {
+        "name": "Time-Aware/Event-Driven List",
+        "url": "#",
+        "description": "Custom behavior on node addition/update with timestamps."
+      }
+    ]
+  },
+  {
+    "name": "Hash Table",
+    "url": "#"
+  },
+  {
+    "name": "Hash Set",
+    "url": "#"
+  },
+  {
+    "name": "Stack",
+    "url": "#"
+  },
+  {
+    "name": "Queue",
+    "url": "#"
+  },
+  {
+    "name": "Priority Queue",
+    "url": "#"
+  },
+  {
+    "name": "Sorting",
+    "url": "#"
+  },
+  {
+    "name": "Searching",
+    "url": "#"
+  },
+  {
+    "name": "Tree",
+    "url": "#"
+  },
+  {
+    "name": "Heap",
+    "url": "#"
+  },
+  {
+    "name": "Graph",
+    "url": "#"
+  }
+]
